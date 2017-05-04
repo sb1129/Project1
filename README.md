@@ -1,2 +1,0 @@
-# sisautomation
-SI Nety Automation
