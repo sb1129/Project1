@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="fineos-test-automation Suite">
+
+	<suite-files>
+		<suite-file path="./Sanity.xml" />
+	</suite-files>
+</suite>

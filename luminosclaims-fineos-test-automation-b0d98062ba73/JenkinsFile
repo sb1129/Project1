@@ -1,0 +1,21 @@
+pipeline {
+    agent {
+        label ''
+    }
+    stages {
+        stage('Execute all tests') {
+            steps {
+                mvn clean test -Pau-gi"
+            }
+						  publishHTML (target: [
+						  allowMissing: false,
+						  alwaysLinkToLastBuild: true,
+						  keepAll: true,
+						  reportDir: 'Reports',
+						  reportFiles: '*.html',
+						  reportName: "Test Report"
+						])
+
+        }
+    }
+}
